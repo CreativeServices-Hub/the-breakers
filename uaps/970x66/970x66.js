@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"1280x100_atlas_1", frames: [[0,0,1280,100],[1282,0,337,98],[1621,0,337,98],[1282,100,337,98]]}
+		{name:"970x66_atlas_1", frames: [[0,68,337,98],[339,68,337,98],[678,68,337,98],[0,0,970,66]]}
 ];
 
 
@@ -27,29 +27,29 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap1 = function() {
-	this.initialize(ss["1280x100_atlas_1"]);
+(lib.Bitmap2 = function() {
+	this.initialize(ss["970x66_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap2 = function() {
-	this.initialize(ss["1280x100_atlas_1"]);
+(lib.Bitmap3 = function() {
+	this.initialize(ss["970x66_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap3 = function() {
-	this.initialize(ss["1280x100_atlas_1"]);
+(lib.Bitmap5 = function() {
+	this.initialize(ss["970x66_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap5 = function() {
-	this.initialize(ss["1280x100_atlas_1"]);
+(lib.Bitmap6 = function() {
+	this.initialize(ss["970x66_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -84,12 +84,13 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Bitmap5();
+	this.instance.setTransform(-30,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol5, new cjs.Rectangle(0,0,337,98), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol5, new cjs.Rectangle(-30,0,337,98), null);
 
 
 (lib.Symbol3 = function(mode,startPosition,loop,reversed) {
@@ -105,12 +106,13 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Bitmap3();
+	this.instance.setTransform(-40,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol3, new cjs.Rectangle(0,0,337,98), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol3, new cjs.Rectangle(-40,0,337,98), null);
 
 
 (lib.Symbol2 = function(mode,startPosition,loop,reversed) {
@@ -126,12 +128,13 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Bitmap2();
+	this.instance.setTransform(-40,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol2, new cjs.Rectangle(0,0,337,98), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol2, new cjs.Rectangle(-40,0,337,98), null);
 
 
 (lib.Symbol1 = function(mode,startPosition,loop,reversed) {
@@ -147,14 +150,14 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FFFFFF").s().p("A5dDSIAAmjMAy7AAAIAAGjg");
-	this.shape.setTransform(163,21);
+	this.shape.graphics.f("#FFFFFF").s().p("EggeAEMIAAoXMBA+AAAIAAIXg");
+	this.shape.setTransform(163,21.05);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol1, new cjs.Rectangle(0,0,326,42), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol1, new cjs.Rectangle(-44.9,-5.7,415.9,53.6), null);
 
 
 // stage content:
@@ -176,8 +179,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({alpha:0},24).wait(216));
 
 	// overlay
-	this.instance_1 = new lib.Bitmap1();
-	this.instance_1.setTransform(0,0,0.66,0.66);
+	this.instance_1 = new lib.Bitmap6();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(240));
 
@@ -202,7 +204,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(449.1,23.1,395.69999999999993,52.199999999999996);
+p.nominalBounds = new cjs.Rectangle(414.3,23.1,555.7,52.199999999999996);
 // library properties:
 lib.properties = {
 	id: 'FF7A879A73D24A8391026FA785B526CB',
@@ -212,7 +214,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/1280x100_atlas_1.png?1767202275631", id:"1280x100_atlas_1"}
+		{src:"images/970x66_atlas_1.png", id:"970x66_atlas_1"}
 	],
 	preloads: []
 };
